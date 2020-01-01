@@ -1,0 +1,46 @@
+.logout {
+    cursor: pointer;
+}
+.navbar {
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0px 2px 2px #eee;
+  }
+
+
+  .nav li a {
+    border-radius: 5px;
+    background-color : transparent;
+  }
+  
+  #name {
+    height: 40px;
+    padding : 0px 5px;
+    color: #00bcd4;
+    display: table;
+  }
+
+
+  #name_id {
+    font-weight: 500;
+    font-size: 17px;
+    font-weight: 800;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .navbar-brand:hover {
+    color: #00bcd4;
+
+  }
+
+  
+
+  .active {
+    color: #fff;
+    border-radius:8px;
+    background-color: #00bcd4;
+  }

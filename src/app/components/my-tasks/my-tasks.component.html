@@ -1,0 +1,10 @@
+<div class="row">
+    <div
+      style="margin-bottom: 40px;"
+      class="col-md-4"
+      *ngFor="let task of tasks"
+    >
+      <app-task  (delTask)="displayAgain($event)" [task]="task"></app-task>
+     
+    </div>
+  </div>

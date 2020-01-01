@@ -1,0 +1,51 @@
+<div
+  class="well well-lg"
+>
+  <div class="row" style="min-height: 90px;">
+    <div id="title" class="col-md-4">
+      <div class="overhead" *ngIf="showDiv"></div>
+      <img
+        style="height: 60px;width: 60px;border-radius: 100%"
+        src="https://www.seekpng.com/png/detail/127-1278004_icons-education-education-icon-purple.png"
+      />
+    </div>
+    <div class="col-md-9">
+      <h4 class="title">
+        {{ task.title }}
+      </h4>
+
+      <!-- <span style="font-size: 15px;color : grey">
+        from &#8377; {{ task.price }}</span
+      > -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p class="description">
+        {{ task.description.substr(0, 120) + "..." }}
+      </p>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-primary btn-block">
+        Order
+      </button>
+    </div>
+    <div class="col-md-6">
+        <button  [routerLink]="['../edit-task', task._id]" class="btn btn-primary btn-block">
+          Edit
+        </button>
+      </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <button (click)="deleteTask(task._id)" class="btn btn-primary btn-block">
+       Delete  
+   </button>
+    </div>
+</div>
+</div>

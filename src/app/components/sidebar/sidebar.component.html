@@ -1,0 +1,23 @@
+<div id="sidebar">
+    <div id="sidebar_content">
+      <ul style="list-style-type : none;margin: 0px;">
+        <li [routerLink]="['./my-profile']" class="active">
+          <i id="icons" class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </li>
+        <li [routerLink]="['./my-task']">
+          <i id="icons" class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </li>
+        <li [routerLink]="['./create-task']">
+          <i id="icons" class="fa fa-cube fa-2x" aria-hidden="true"></i>
+        </li>
+
+
+        <li (click)="onLogout()">
+          <i id="icons" class="fa fa-cube fa-2x" aria-hidden="true"></i>
+        </li>
+
+       
+      </ul>
+    </div>
+  </div>
+  
